@@ -25,6 +25,9 @@
         },
         "classmap": [
             "src/Quasar/Navtools"
+        ],
+        "files": [
+            "src/helpers.php"
         ]
     },
     "extra": {

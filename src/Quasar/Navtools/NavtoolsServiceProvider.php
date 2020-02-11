@@ -11,7 +11,7 @@ class NavtoolsServiceProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
-        // register migrations
+        /* // register migrations
         $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
 
         // register translations
@@ -25,7 +25,7 @@ class NavtoolsServiceProvider extends ServiceProvider
         // register config
         $this->publishes([
             __DIR__ . '/../../config/quasar-navtools.php' => config_path('quasar-navtools.php')
-        ], 'config');
+        ], 'config'); */
 	}
 
 	/**

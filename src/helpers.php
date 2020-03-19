@@ -1,6 +1,6 @@
 <?php
 
-if (! function_exists('nt_route'))
+if (! function_exists('ntRoute'))
 {
     /**
      * Generate the URL for named route.
@@ -10,7 +10,7 @@ if (! function_exists('nt_route'))
      * @param  bool    $absolute
      * @return string
      */
-    function nt_route($name, $parameters = [], $absolute = true)
+    function ntRoute($name, $parameters = [], $absolute = true)
     {
         $routes = \Illuminate\Support\Facades\Route::getRoutes();
         $route  = $routes->getByName($name);
@@ -22,7 +22,7 @@ if (! function_exists('nt_route'))
     }
 }
 
-if (! function_exists('active_route'))
+if (! function_exists('activeRoute'))
 {
     /**
      * Get user country from session.
@@ -31,7 +31,7 @@ if (! function_exists('active_route'))
      * @param   bool        $firstOccurrence    active to find first occurrence of route, this method is valid to active menu on subsections
      * @return  boolean
      */
-    function active_route($routeNames, $class = 'active', $firstOccurrence = false)
+    function activeRoute($routeNames, $class = 'active', $firstOccurrence = false)
     {
         // if doesn't has any route with the current url, Request::route() will be null
         if (Request::route() === null) return null;
